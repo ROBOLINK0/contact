@@ -1,0 +1,57 @@
+.form-background {
+  background: rgb(62,123,255);
+  background: linear-gradient(180deg, rgba(62,123,255,1) 0%, rgba(65,174,255,1) 50%, rgb(255, 255, 255) 100%);
+  padding: 50px;
+}
+
+.form-white {
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  width: 600px;
+
+  margin: auto;
+}
+
+.form-white h1 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.form-label {
+  display: block;
+  margin: 10px 0px 10px 0px;
+}
+
+.form-input {
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-Email,
+.form-Content {
+  width: 100%;
+  height: 80%;
+  padding: 7px;
+}
+
+.form-Fname {
+  width: 50%;
+  float: left;
+  padding: 7px;
+}
+
+.form-Lname {
+  width: 50%;
+  float: left;
+  padding: 7px;
+}
+
+.form-button {
+  padding: 10px;
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+}

@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>ROBOLINK Contact Form</title>
+  <link rel="stylesheet" href="./layout.css">
+  <div class="form-background">
+    <div class="form-white">
+
+</head>
+
+
+<body>
+  <h2 class="content-head is-center">로보링크  교육·대회 문의하기</h2>
+  <aside>
+       <p>
+           안녕하세요!  <em>로보링크</em> 입니다! 교육 또는 대회 문의를 원하신다면 </p>
+           <b> <p><em>연락처를 정확하게 기재하여</em></p> </b>
+           아래 양식에 맞춰 작성 후 문의하기를 눌러주세요.
+       </p>
+   </aside>
+
+<!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="jwlee@robolink.co.kr" target = iframe1
+  action="https://script.google.com/macros/s/AKfycby-MDo7b_e7h2ndp9rbOmZazREI7rrSVCKVDUdOKvZnYSvAIp6f7N061MPr3E4LoS_xgg/exec">
+    <!-- change the form action to your script url -->
+
+      <fieldset class="form-Fname">
+        <label for="이름" class="form-label">Name /이름 </label>
+        <input id="text" id="이름" class="form-input" name="이름" placeholder="이름" />
+      </fieldset>
+
+      <fieldset class="form-Lname">
+        <label for="연락처" class="form-label">Phone / 연락처 </label>
+        <input type="text" id="연락처" class="form-input" name="연락처"                      
+        placeholder="010-0000-0000" />
+      </fieldset>
+
+      <fieldset class="form-Email">
+        <label for="email" class="form-label"> E-mail / 이메일:</label>
+        <input type="email" id="email" class="form-input" name="email"
+        placeholder="이메일을 입력하세요." />
+      </fieldset>
+<!--
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+-->
+
+      <fieldset class="pure-group">
+        <label for="message">Message: / 메세지 </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="메세지를 남겨주세요"></textarea>
+      </fieldset>
+
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;문의하기</button>
+      </fieldset>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>감사합니다!</em>
+      </h2>
+    </div>
+
+    <div style="text-align: center;"><img style="width: 220px; height: 60px;" src="https://drive.google.com/uc?id=1H9wAR2P0RXioi6L7nNOHyFh2KJbPJXe4" />
+
+  </form>
+  <iframe id="iframe1" name="iframe1" style="display:none"></iframe>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
+
+</body>
+</html>
