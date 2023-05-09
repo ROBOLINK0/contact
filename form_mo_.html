@@ -28,7 +28,7 @@
    <!-- Style The Contact Form How Ever You Prefer -->
    <link rel="stylesheet" href="style.css">
 
-  <form class="gform pure-form pure-form-stacked" method="POST" data-email="jwlee@robolink.co.kr" target = iframe1
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="jwlee@robolink.co.kr"  target = iframe1
   action="https://script.google.com/macros/s/AKfycby-MDo7b_e7h2ndp9rbOmZazREI7rrSVCKVDUdOKvZnYSvAIp6f7N061MPr3E4LoS_xgg/exec">
     <!-- change the form action to your script url -->
 
@@ -62,20 +62,26 @@
       </fieldset>
 
 
-      <button class="button-success pure-button button-xlarge">
-        <i class="fa fa-paper-plane"></i>&nbsp;문의하기</button>
-      </fieldset>
+      
+      
+<button class="button-success pure-button button-xlarge" onclick="alert('메일이 전송되었습니다.')">
+  <i class="fa fa-paper-plane"></i>&nbsp; 문의하기
+</button>
+
+
 
     <!-- Customise the Thankyou Message People See when they submit the form: -->
     <div class="thankyou_message" style="display:none;">
       <h2><em>감사합니다!</em>
+
       </h2>
     </div>
 
     <div style="text-align: center;"><img style="width: 220px; height: 60px;" src="https://drive.google.com/uc?id=1H9wAR2P0RXioi6L7nNOHyFh2KJbPJXe4" />
 
   </form>
-  <iframe id="iframe1" name="iframe1" style="display:none"></iframe>
+  <iframe src="http://www.robolink.co.kr/web/" id="iframe1" name="iframe1" >
+  </iframe>
 
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" src="form-submission-handler.js"></script>
